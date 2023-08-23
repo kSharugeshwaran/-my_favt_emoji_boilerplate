@@ -1,0 +1,87 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,100;0,200;1,100&family=Roboto&display=swap" rel="stylesheet">);
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-align: center;
+h1{
+    text-align: center;
+}    
+
+}
+.emoji-face{
+    width: 100px;
+    height: 100px;
+    background-color:#d9ba33;
+    margin: 20px;
+    border-radius: 50px;
+    position: relative;
+
+}
+h1{
+    text-align: center;
+}    
+.eye1{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color:#9d580f;
+    margin: 20px;
+    border-radius: 50px;
+    left: 50px;
+    top: 10px;
+
+    
+
+}
+.eye2{
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    top: 10px;
+    background-color: #995710;
+
+    margin: 20px;
+}
+.mouth{
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 40px 40px;
+    background-color: #995710;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    overflow: hidden;
+
+}
+.tongue{
+    width: 40px;
+    height: 20px;
+    background-color: #e23d5d;
+    border-radius: 50px 50px 0 0;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+}
+.mouth-speechless{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    border-radius: 0 0 0 0 ;
+    top: 65px;
+    left: 23px;
+    background-color:#9d580f;
+}
+.mouth-shock{
+    width: 20px;
+    height: 25px;
+    position:absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 40px;
+    background-color: #9d580f;
+}
