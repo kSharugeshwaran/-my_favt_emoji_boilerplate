@@ -1,87 +1,124 @@
-@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,100;0,200;1,100&family=Roboto&display=swap" rel="stylesheet">);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    text-align: center;
+
+}
 h1{
     text-align: center;
-}    
-
 }
 .emoji-face{
     width: 100px;
     height: 100px;
-    background-color:#d9ba33;
+    background-color:#F2DD68;
     margin: 20px;
     border-radius: 50px;
     position: relative;
-
 }
-h1{
-    text-align: center;
-}    
 .eye1{
     position: absolute;
-    width: 11px;
-    height: 11px;
-    background-color:#9d580f;
-    margin: 20px;
+    width: 10px;
+    height: 10px;
+    background-color:#995710;
+    top: 21px;
+    left: 25px;
     border-radius: 50px;
-    left: 50px;
-    top: 10px;
-
-    
-
+    animation: wink 2s infinite;
 }
 .eye2{
     position: absolute;
-    height: 11px;
-    width: 11px;
-    border-radius: 50%;
-    top: 10px;
-    background-color: #995710;
-
-    margin: 20px;
+    width: 10px;
+    height: 10px;
+    background-color:#995710;
+    top: 20px;
+    left: 60px;
+    border-radius: 50px;
+    animation: wink 2s infinite;
 }
 .mouth{
+    position: absolute;
     width: 60px;
     height: 30px;
-    border-radius: 0 0 40px 40px;
-    background-color: #995710;
-    position: absolute;
+    background-color:#995710;
     top: 60px;
     left: 20px;
+    border-radius: 0 0 50px 50px;
     overflow: hidden;
-
+    animation: moveMouth 2s infinite;
 }
 .tongue{
+    position: absolute;
     width: 40px;
-    height: 20px;
-    background-color: #e23d5d;
-    border-radius: 50px 50px 0 0;
-    position:absolute;
-    top: 10px;
+    height: 15px;
+    background-color:#E25D5D;
+    top: 15px;
     left: 10px;
+    border-radius:40px 40px 0 0;
+   
+    
+
 }
 .mouth-speechless{
     position: absolute;
     width: 50px;
     height: 5px;
-    border-radius: 0 0 0 0 ;
-    top: 65px;
+    background-color:#995710;
+    top: 60px;
     left: 23px;
-    background-color:#9d580f;
+    border-radius: 0 0 0 0;
+    animation: moveMouth 2s infinite;
+
 }
 .mouth-shock{
+    position: absolute;
     width: 20px;
-    height: 25px;
-    position:absolute;
-    border-radius: 50%;
-    top: 50px;
+    height: 23px;
+    background-color:#995710;
+    top: 47px;
     left: 40px;
-    background-color: #9d580f;
+    border-radius: 15px;
+    animation: moveMouth 2s infinite;
+}
+.emoji-face{
+    float:left;
+    margin: auto;
+    
+    
+    
+}
+.write-up{
+    position:absolute;
+    top: 300px;
+    width: 60%;
+    background-color: #D8AA2B;
+    border-radius: 10px;
+    margin: auto;
+    left: 350px;
+    text-align: center;
+}
+.wrapper{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    
+}
+p{
+    text-align: justify;
+    padding:30px;
+}
+@keyframes wink {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes moveMouth {
+    0%, 100% {
+        top: 60px;
+    }
+    50% {
+        top: 65px;
+    }
 }
